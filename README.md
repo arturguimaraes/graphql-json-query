@@ -20,11 +20,16 @@ npm i
 ```js 
 npm start
 ```
-5. `Testing with Jest` 
+![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print2.png?raw=true)
+
+## Unit Tests
+
+Uses the Jest package for testing.
+1. `Testing with Jest` 
 ```js 
 npm test
 ```
-![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print2.png?raw=true)
+![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print3.png?raw=true)
 
 ## Introduction
 
