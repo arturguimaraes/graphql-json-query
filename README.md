@@ -27,26 +27,47 @@ A GraphQL API that takes a chat message string in GraphQL query format as input,
 2. Emoticons - Consider 'custom' emoticons which are alphanumeric strings, no longer than 15 characters, contained in parenthesis.
 3. Links - Any URLs contained in the message, along with the page's title.
 
-## Examples
-
+## Example 1
 ### Input
 ```js
 {
-    records(message: "@chris you around?") {
-        mentions
+  records(message: "@chris you around?") {
+    mentions
+  }
+}
+```
+### Response
+```js
+{
+  "data": {
+    "records": {
+      "mentions": [
+        "chris"
+      ]
     }
+  }
+}
+```
+## Example 2
+### Input
+```js
+{
+  records(message: "Good morning! (megusta) (coffee)") {
+    emoticons
+  }
 }
 ```
 
 ### Response
 ```js
 {
-    "data": {
-        "records": {
-            "mentions": [
-                "chris"
-            ]
-        }
+  "data": {
+    "records": {
+      "emoticons": [
+        "coffee",
+        "megusta"
+      ]
     }
+  }
 }
 ```
