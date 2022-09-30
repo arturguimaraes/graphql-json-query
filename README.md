@@ -57,7 +57,6 @@ A GraphQL API that takes a chat message string in GraphQL query format as input,
   }
 }
 ```
-
 ### Response
 ```js
 {
@@ -66,6 +65,71 @@ A GraphQL API that takes a chat message string in GraphQL query format as input,
       "emoticons": [
         "coffee",
         "megusta"
+      ]
+    }
+  }
+}
+```
+## Example 3
+### Input
+```js
+{
+  records(message: "Olympics are starting soon; http://www.nbcolympics.com") {
+    mentions, 
+    links {
+        url,
+        title
+    }
+  }
+}
+```
+### Response
+```js
+{
+  "data": {
+    "records": {
+      "mentions": [],
+      "links": [
+        {
+          "url": "http://www.nbcolympics.com",
+          "title": "Beijing 2022 Olympic Winter Games"
+        }
+      ]
+    }
+  }
+}
+```
+## Example 4
+### Input
+```js
+{
+  records(message: "@bob @john (success) such a cool feature; https://www.apollographql.com/") {
+    mentions, 
+    emoticons,
+    links {
+        url,
+        title
+    }
+  }
+}
+```
+### Response
+```js
+{
+  "data": {
+    "records": {
+      "mentions": [
+        "bob",
+        "john"
+      ],
+      "emoticons": [
+        "success"
+      ],
+      "links": [
+        {
+          "url": "https://www.apollographql.com/",
+          "title": "Supergraph: unify APIs, microservices, & databases in a composable graph"
+        }
       ]
     }
   }
