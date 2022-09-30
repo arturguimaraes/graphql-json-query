@@ -20,6 +20,10 @@ npm i
 ```js 
 npm start
 ```
+5. `Testing with Jest` 
+```js 
+npm test
+```
 ![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print2.png?raw=true)
 
 ## Introduction
