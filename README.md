@@ -1,4 +1,4 @@
-# GraphQL Application
+# GraphQL API Server
 
 ![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print.png?raw=true)
 
