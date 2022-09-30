@@ -1,5 +1,7 @@
 # GraphQL Application
 
+![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print.png?raw=true)
+
 ## Installation
 
 1. `Clone repository`
@@ -18,7 +20,7 @@ npm i
 ```js 
 npm start
 ```
-![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print.png?raw=true)
+![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print2.png?raw=true)
 
 ## Introduction
 
