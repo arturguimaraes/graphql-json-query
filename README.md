@@ -14,10 +14,11 @@ cd graphql-json-query
 ```js 
 npm i
 ```
-4. `Start project on http://localhost:4000`
+4. `Start project on http://localhost:4000 and test it with Apollo Studio Sandbox` 
 ```js 
 npm start
 ```
+![graphql-json-query](https://github.com/arturguimaraes/graphql-json-query/blob/main/src/assets/img/print.png?raw=true)
 
 ## Introduction
 
